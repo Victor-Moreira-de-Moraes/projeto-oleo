@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "nome": "Armazém da Família – Autódromo, Cajuru",
+    "lat": -25.399,
+    "lng": -49.26
+  },
+  {
+    "id": 2,
+    "nome": "Armazém da Família – Bairro Alto",
+    "lat": -25.439,
+    "lng": -49.25
+  },
+  {
+    "id": 3,
+    "nome": "Armazém da Família – Boa Vista",
+    "lat": -25.396,
+    "lng": -49.267
+  },
+  {
+    "id": 4,
+    "nome": "Armazém da Família – Santa Felicidade",
+    "lat": -25.411,
+    "lng": -49.254
+  },
+  {
+    "id": 5,
+    "nome": "Armazém da Família – Pilarzinho",
+    "lat": -25.429,
+    "lng": -49.269
+  },
+  {
+    "id": "matriz",
+    "nome": "Armazém da Família Matriz",
+    "endereco": "Praça Rui Barbosa, 101 - Centro",
+    "lat": -25.434751,
+    "lng": -49.272767
+  },
+  {
+    "id": "bairro_alto",
+    "nome": "Armazém da Família Bairro Alto",
+    "endereco": "R. Rio Japurá, 1758 - Bairro Alto",
+    "lat": -25.40004,
+    "lng": -49.20032
+  },
+  {
+    "id": "boa_vista",
+    "nome": "Armazém da Família Boa Vista",
+    "endereco": "Av. Paraná, 3783 - Boa Vista",
+    "lat": -25.3847159,
+    "lng": -49.2322637
+  },
+  {
+    "id": "bairro_novo",
+    "nome": "Armazém da Família Bairro Novo",
+    "endereco": "R. Ana Alzira Pereira, 106 - Sítio Cercado",
+    "lat": -25.5465846,
+    "lng": -49.258363
+  },
+  {
+    "id": "centenario",
+    "nome": "Armazém da Família Centenário",
+    "endereco": "R. Lourival Wendler, 600 - Cajuru",
+    "lat": -25.4689329,
+    "lng": -49.2091409
+  },
+  {
+    "id": "barigui",
+    "nome": "Armazém da Família Barigui",
+    "endereco": "R. Des. Cid Campelo, 5855 - CIC",
+    "lat": -25.511738,
+    "lng": -49.3327707
+  },
+  {
+    "id": "capao_raso",
+    "nome": "Armazém da Família Capão Raso",
+    "endereco": "R. Otto Cabél, 51 - Novo Mundo",
+    "lat": -25.4920231,
+    "lng": -49.293004
+  },
+  {
+    "id": "boqueirao",
+    "nome": "Armazém da Família Boqueirão",
+    "endereco": "Av. Mal. Floriano Peixoto, 10350 - Boqueirão",
+    "lat": -25.5030881,
+    "lng": -49.2366084
+  },
+  {
+    "id": "autodromo",
+    "nome": "Armazém da Família Autódromo (Cajuru)",
+    "endereco": "R. Dr. Ivan Jorge Curi, 195 - Cajuru",
+    "lat": -25.4566551,
+    "lng": -49.1985
+  },
+  {
+    "id": "santa_felicidade",
+    "nome": "Armazém da Família Santa Felicidade",
+    "endereco": "R. Via Vêneto, 1339 - Santa Felicidade",
+    "lat": -25.4013389,
+    "lng": -49.3300307
+  },
+  [
+  {
+    "id": "alto_boqueirao_benedicto_branco",
+    "nome": "Armazém da Família Alto Boqueirão (Jardim Paranaense)",
+    "endereco": "Rua Dr. Benedicto Siqueira Branco, 222 - Alto Boqueirão",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "barreirinha_santa_efigenia",
+    "nome": "Armazém da Família Santa Efigênia (Barreirinha)",
+    "endereco": "Rua José Carlos Puppi, s/nº - Barreirinha (fundos do Terminal Barreirinha)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "fazendinha_carlos_klemtz",
+    "nome": "Armazém da Família Fazendinha",
+    "endereco": "Rua Carlos Klemtz, 1600 - Fazendinha (ao lado do Terminal Fazendinha)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "n_s_luz_sergio_leal",
+    "nome": "Armazém da Família Nossa Senhora da Luz",
+    "endereco": "Rua Sérgio Carlos Martins Leal, s/nº - CIC",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "pinheirinho_maria_angelica",
+    "nome": "Armazém da Família Maria Angélica (Pinheirinho)",
+    "endereco": "Rua Prof. Júlio Theodorico Guimarães, 388-A - Pinheirinho (esq. Rua Monte Sinai)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["BemParana"]
+  },
+  {
+    "id": "pilarzinho_hostilio_araujo",
+    "nome": "Armazém da Família Pilarzinho",
+    "endereco": "Rua Profº Hostilio de Araújo, s/nº - Pilarzinho",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "sabara_antonio_pastre",
+    "nome": "Armazém da Família Sabará",
+    "endereco": "Rua Antônio Pastre, 420 - CIC (Esq. Rua São Perpétuo / Estrada Velha do Barigui)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "vila_sao_pedro_xaxim",
+    "nome": "Armazém da Família Vila São Pedro (Xaxim)",
+    "endereco": "Rua Hermenegildo Bonat, 408-B - Xaxim",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "centro_matriz",
+    "nome": "Armazém da Família Centro (Matriz)",
+    "endereco": "Praça Rui Barbosa, 101 - Centro (Rua da Cidadania Matriz)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "cajuru_mauricio_fruet",
+    "nome": "Armazém da Família Cajuru (Maurício Fruet)",
+    "endereco": "Av. Pref. Maurício Fruet, 1880 - Cajuru",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ServicosPrefeitura"]
+  },
+  {
+    "id": "alto_boqueirao_sitio_cercado",
+    "nome": "Armazém da Família Sítio Cercado (Bairro Novo)",
+    "endereco": "Rua Ana Alzira Cordeiro, s/nº - Sítio Cercado (esq. Rua Ourizona)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "boa_vista_parana_3783",
+    "nome": "Armazém da Família Boa Vista (extra)",
+    "endereco": "Av. Paraná, 3783 - Boa Vista (reforço de endereço da unidade)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "alto_boqueirao_extra",
+    "nome": "Armazém da Família Alto Boqueirão (ref.)",
+    "endereco": "Rua Dr. Benedicto Siqueira Branco, 222 - Alto Boqueirão (final da R. Francisco Derosso)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["BemParana"]
+  },
+  {
+    "id": "santa_felicidade_1540",
+    "nome": "Armazém da Família Santa Felicidade (1540)",
+    "endereco": "Via Vêneto, 1540 - Santa Felicidade",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  },
+  {
+    "id": "campo_do_santana_rio_bonito",
+    "nome": "Armazém da Família Campo do Santana (Rio Bonito)",
+    "endereco": "Rua Delegado Bruno de Almeida, 3415 - Campo do Santana (Rio Bonito)",
+    "lat": null,
+    "lng": null,
+    "fonte": ["ConexaoAmbiental", "BemParana"]
+  }
+]
+]

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coleta de Óleo Sustentável</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+        background: #f7f9f8;
+        }
+
+        header {
+        background-color: #009879;
+        color: white;
+        padding: 16px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        }
+
+        main {
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        }
+
+        section {
+        margin-bottom: 40px;
+        }
+
+        h2 {
+        color: #009879;
+        border-left: 5px solid #009879;
+        padding-left: 10px;
+        }
+
+        p {
+        line-height: 1.6;
+        }
+
+        .map-container {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid #ccc;
+        }
+
+        footer {
+        text-align: center;
+        background: #009879;
+        color: white;
+        padding: 10px;
+        }
+
+        .btn-mapa {
+        display: inline-block;
+        background: #009879;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        }
+
+        .btn-mapa:hover {
+        background: #007f66;
+        }
+
+    </style>
+</head>
+<body>
+  <header>
+    Coleta de Óleo Sustentável
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        O descarte incorreto de óleo de cozinha é uma das maiores causas de entupimentos e
+        poluição de águas. Cada litro de óleo despejado incorretamente pode contaminar milhares de
+        litros de água. Este projeto tem como objetivo conscientizar e facilitar o descarte correto,
+        conectando você aos pontos de coleta mais próximos.
+      </p>
+    </section>
+
+<section class="fonte-oficial" aria-label="Informação oficial">
+  <h2>Fontes oficiais e horários</h2>
+  <p>
+    Os Armazéns da Família possuem postos de coleta de óleo de cozinha usado. 
+    Consulte a notícia da Prefeitura de Curitiba:
+    <a href="https://www.curitiba.pr.gov.br/noticias/mais-armazens-da-familia-tem-postos-de-coleta-de-oleo-de-cozinha-usado/42966" target="_blank" rel="noopener">
+      “Mais Armazéns da Família têm postos de coleta de óleo de cozinha usado”
+    </a>.
+  </p>
+  <p><strong>Horários de funcionamento:</strong><br>
+    Terça a sexta-feira, das <strong>8h45 às 17h15</strong>.<br>
+    Aos sábados, das <strong>8h30 às 13h</strong>.
+  </p>
+</section>
+
+
+<section id="educacao">
+  <h2>Educação Ambiental</h2>
+  <p>
+    Reciclar o óleo de cozinha é simples e traz benefícios enormes ao meio ambiente. Siga estes passos:
+  </p>
+  <ul>
+    <li>Deixe o óleo esfriar completamente após o uso.</li>
+    <li>Coe para remover restos de alimentos.</li>
+    <li>Armazene em uma garrafa PET limpa e bem fechada.</li>
+    <li>Leve o recipiente até um ponto de coleta.</li>
+  </ul>
+  <p>
+    O óleo reciclado pode ser utilizado na produção de biodiesel, sabão e outros produtos sustentáveis.
+    Ao adotar esse hábito, você contribui para a preservação do meio ambiente e a redução de danos
+    às redes de esgoto.
+  </p>
+</section>
+
+<section id="mapa">
+  <h2>Pontos de Coleta</h2>
+  <p>
+    Abaixo estão os principais pontos de coleta cadastrados. Inicialmente em Curitiba. Você pode visualizar diretamente no mapa e
+    encontrar o mais próximo da sua residência.
+  </p>
+  <div id="map" class="map-container"></div>
+  <a href="#" class="btn-mapa" id="verMapa">Atualizar Mapa</a>
+</section>
+
+  </main>
+
+  <footer>
+    © 2025 Projeto Coleta de Óleo Sustentável • Desenvolvido para fins educativos
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map('map').setView([-25.4284, -49.2733], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap',
+    }).addTo(map);
+
+    function carregarPontos() {
+      fetch('/pontos')
+        .then(res => res.json())
+        .then(pontos => {
+          pontos.forEach(p => {
+            L.marker([p.lat, p.lng])
+              .addTo(map)
+              .bindPopup(`<strong>${p.nome}</strong>`);
+          });
+        })
+        .catch(err => console.error('Erro ao carregar pontos:', err));
+    }
+
+    document.getElementById('verMapa').addEventListener('click', e => {
+      e.preventDefault();
+      carregarPontos();
+    });
+
+    carregarPontos();
+  </script>
+
+</body>
+</html>
